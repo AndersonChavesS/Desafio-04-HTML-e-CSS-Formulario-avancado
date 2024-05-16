@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Shapes-02: #fafafc;
+  --Back-Lines-in-white: #e6e6f0;
+  --font-size--complements: 14px;
+  --font-size--titles: 24px;
+  --font-color: #4e4958;
+  --font-color--titles: #253b51;
+  --line-height--text: 24px;
+  --line-height--titles: 34px;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #bfd7e4;
+}
+
+body ::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: #293241;
+  width: 100%;
+  height: 465px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  width: 750px;
+  min-height: 1510px;
+  margin: 107px auto 0;
+  background: #bfd7e4;
+  border-radius: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header #title {
+  text-transform: uppercase;
+  color: var(--font-color--titles);
+  font-family: Staatliches;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+header p {
+  color: var(--font-color);
+  font-size: 16px;
+
+  margin: auto;
+  width: 391px;
+  height: 46px;
+}
+
+form {
+  width: 750px;
+  min-height: 450px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+}
+fieldset {
+  border: none;
+}
+
+#fieldset legend {
+  width: 750px;
+  height: 129px;
+  padding: 50px 275px;
+
+  border: none;
+
+  background: #f67669;
+
+  color: #fff;
+  font-family: Staatliches;
+  font-size: var(--font-size--titles);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--line-height--titles);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 625px;
+  margin: 31px auto;
+}
+
+.name,
+.lastname,
+.email,
+.info_mentor,
+.date,
+.begin,
+.end {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fullname {
+  display: flex;
+  gap: 22px;
+}
+
+.name label,
+.lastname label,
+.email label,
+.info_mentor label,
+.date label,
+.begin label,
+.end label {
+  color: var(--font-color);
+  font-size: var(--font-size--complements);
+  line-height: var(--line-height--text);
+  margin-bottom: 8px;
+}
+
+.fullname input,
+.date input {
+  width: 300px;
+  height: 55px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white);
+  background: var(--Shapes-02);
+  padding-left: 10px;
+  font-size: var(--font-size--complements);
+  line-height: var(--line-height--text);
+}
+
+.email label span,
+.date label span {
+  color: #c1bccc;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 9px;
+  transition: 0.4s;
+}
+
+.email label span:hover,
+.date label span:hover {
+  color: #75727c;
+}
+
+.email input {
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white);
+  background: var(--Shapes-02);
+  font-size: var(--font-size--complements);
+  line-height: var(--line-height--text);
+  padding-left: 10px;
+}
+
+.form > div:nth-child(2) {
+  width: 100%;
+}
+
+.fildset legend {
+  width: 622px;
+  height: 34px;
+  padding: 0 205px;
+
+  margin-left: 65px;
+
+  font-family: Staatliches;
+  color: var(--font-color--titles);
+  font-size: var(--font-size--titles);
+  line-height: var(--line-height--titles);
+  font-style: normal;
+  font-weight: 400;
+}
+hr {
+  width: 622px;
+  margin: 8px auto 0;
+  border: 1px solid var(--Back-Lines-in-white);
+}
+
+.info_mentor select {
+  width: 300px;
+  height: 55px;
+  padding-left: 10px;
+  margin-bottom: 32px;
+
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white);
+  background: var(--Shapes-02);
+  appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='4' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M1 1.64984L5 5.61617L9 1.64984' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: right 16px top 50%;
+
+  font-size: var(--font-size--complements);
+}
+.info_mentor select option {
+  font-size: var(--font-size--complements);
+}
+
+.feedback_mentor label {
+  color: var(--font-color);
+  font-size: var(--font-size--complements);
+  line-height: 24px;
+}
+
+.feedback_mentor textarea {
+  width: 100%;
+  height: 165px;
+  padding: 10px;
+  resize: none;
+  margin-top: 8px;
+  margin-bottom: 29px;
+
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white);
+  background: var(--Shapes-02);
+  font-size: var(--font-size--complements);
+}
+
+.checkbox {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  opacity: 0;
+}
+
+.checkbox label::before {
+  content: '';
+  display: block;
+  z-index: 0;
+  background: #fff;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--Back-Lines-in-white);
+  border-radius: 8px;
+}
+
+.checkbox input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6016_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6016_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E ");
+}
+
+.checkbox input:focus + label::before {
+  outline: 2px solid #121214;
+}
+
+.checkbox label {
+  color: var(--font-color);
+  font-size: var(--font-size--complements);
+  line-height: var(--line-height--text);
+  margin-left: 38px;
+}
+
+.fildset .legend {
+  width: 622px;
+  padding: 0 160px;
+}
+
+.scheduling {
+  display: flex;
+  gap: 20px;
+}
+
+.begin input,
+.end input {
+  width: 140px;
+  height: 55px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white);
+  background: var(--Shapes-02);
+  padding-left: 10px;
+  font-size: var(--font-size--complements);
+  line-height: var(--line-height--text);
+}
+
+.btn-to-save {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  height: 100px;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.btn-to-save .btn {
+  width: 622px;
+  height: 51px;
+  padding: 15px 40px;
+
+  border-radius: 8px;
+  background: #f67669;
+  border: none;
+
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-to-save .btn:hover {
+ background: #253b51;
+
+}
